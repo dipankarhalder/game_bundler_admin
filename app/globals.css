@@ -67,3 +67,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.sidebar_icon svg{
+  width: 20px;
+  height: 20px;
+}
+.selectGameDialog > button {
+  display: none;
+}
