@@ -14,7 +14,7 @@ export const Sidebar = () => {
   };
 
   return (
-    <div className="px-2 py-4 h-screen lg:block bg-slate-950">
+    <div className="px-2 py-4 h-screen w-[240px] bg-slate-950 overflow-y-auto fixed left-0 top-0">
       <div className="w-full h-[60px] bg-slate-700 rounded mb-4"></div>
       <div className="w-full">
         <ul>
