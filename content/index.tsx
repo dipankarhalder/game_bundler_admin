@@ -8,10 +8,13 @@ import {
   HiOutlineCube,
   HiOutlineGift,
   HiOutlineSwitchHorizontal,
-  HiOutlineExternalLink,
 } from "react-icons/hi";
 
 import { ISidebar } from "@/interface";
+
+export const appStorage = {
+  MAIN_DROPDOWN_GAME: "MAIN_DROPDOWN_GAME",
+};
 
 export const environments = [
   "Development",
@@ -35,11 +38,11 @@ export const sidebarLinks: ISidebar[] = [
     sublist: [
       {
         name: "Tagged Users",
-        path: "/",
+        path: "/tagged-users",
       },
       {
         name: "Untagged Users",
-        path: "/",
+        path: "/untagged-users",
       },
     ],
   },
