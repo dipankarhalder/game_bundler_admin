@@ -1,16 +1,35 @@
 import { ReactNode } from "react";
-export interface IChildren {
+export type IChildren = {
   children: React.ReactNode;
-}
+};
 
-export interface ISublistItem {
+export type ISublistItem = {
   name: string;
   path: string;
-}
+};
 
-export interface ISidebar {
+export type ISidebar = {
   name: string;
   path?: string;
   icon: ReactNode;
   sublist: ISublistItem[];
-}
+};
+
+export type IUserInfo = {
+  id: string;
+  name: string;
+  dob: string;
+  activeUser: boolean;
+  amount: number;
+  email: string;
+  phoneNo: string;
+};
+
+export type IUntagUserInfo = {
+  id: string;
+  name: string;
+  dob: string;
+  amount: number;
+  email: string;
+  phoneNo: string;
+};

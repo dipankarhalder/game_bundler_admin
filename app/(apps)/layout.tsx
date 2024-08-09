@@ -8,7 +8,7 @@ export default function AppsLayout({ children }: IChildren) {
       <Sidebar />
       <div className="col-span-3 flex-1 ml-[240px]">
         <Header />
-        <div className="pt-4 px-5">{children}</div>
+        <div className="pt-6 px-7">{children}</div>
       </div>
     </div>
   );
