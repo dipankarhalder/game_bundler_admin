@@ -20,7 +20,7 @@ export default function RootLayout({ children }: Readonly<IChildren>) {
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-slate-100 font-sans antialiased flex",
+          "min-h-screen bg-slate-50 font-sans antialiased flex",
           fontSans.variable
         )}
       >
