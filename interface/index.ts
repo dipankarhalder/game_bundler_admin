@@ -41,6 +41,6 @@ export type IGameInfo = {
   create_date: string;
   active_status: boolean;
   genre: string;
-  google_image_link: string;
+  image_link: string;
   bundle_price: number;
 };

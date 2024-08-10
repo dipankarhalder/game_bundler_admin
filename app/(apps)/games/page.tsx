@@ -47,12 +47,19 @@ import {
   HiOutlineChevronDoubleLeft,
   HiOutlineChevronDoubleRight,
 } from "react-icons/hi";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { data } from "@/content/games";
 import { IGameInfo } from "@/interface";
+
+function getInitials(name: string) {
+  const words = name.split(" ");
+  const initials = words.map((word) => word.charAt(0).toUpperCase()).join("");
+  return initials;
+}
 
 export const columns: ColumnDef<IGameInfo>[] = [
   {
@@ -78,13 +85,6 @@ export const columns: ColumnDef<IGameInfo>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "game_id",
-    header: "ID",
-    cell: ({ row }) => (
-      <div className="capitalize font-semibold">{row.getValue("game_id")}</div>
-    ),
-  },
-  {
     accessorKey: "game_name",
     header: ({ column }) => {
       return (
@@ -97,10 +97,27 @@ export const columns: ColumnDef<IGameInfo>[] = [
         </span>
       );
     },
+    cell: ({ row }) => {
+      const initials = getInitials(row.getValue("game_name"));
+      return (
+        <div className="flex items-center">
+          <Avatar className="mr-3">
+            <AvatarFallback className="font-semibold text-xs">
+              {initials}
+            </AvatarFallback>
+          </Avatar>
+          <div className="capitalize font-semibold">
+            {row.getValue("game_name")}
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "game_id",
+    header: "Game ID",
     cell: ({ row }) => (
-      <div className="capitalize font-semibold">
-        {row.getValue("game_name")}
-      </div>
+      <div className="capitalize font-semibold">{row.getValue("game_id")}</div>
     ),
   },
   {
