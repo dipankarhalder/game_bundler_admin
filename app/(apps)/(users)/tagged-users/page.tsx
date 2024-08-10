@@ -122,6 +122,18 @@ export const columns: ColumnDef<IUserInfo>[] = [
     cell: ({ row }) => <div className="capitalize">{row.getValue("dob")}</div>,
   },
   {
+    accessorKey: "amount",
+    header: () => <div className="text-right">Wallet amount</div>,
+    cell: ({ row }) => {
+      const amount = parseFloat(row.getValue("amount"));
+      const formatted = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(amount);
+      return <div className="text-right font-semibold">{formatted}</div>;
+    },
+  },
+  {
     accessorKey: "activeUser",
     header: ({ column }) => {
       return (
@@ -141,24 +153,19 @@ export const columns: ColumnDef<IUserInfo>[] = [
       return (
         <div
           className={`${
-            emailVerify === "Verified" ? "text-green-700" : "text-red-700"
-          } inline-flex items-center rounded-md border px-1.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground`}
+            emailVerify === "Verified"
+              ? "bg-green-50 text-green-700"
+              : "bg-red-50 text-red-700"
+          } inline-flex items-center rounded-md px-2 py-1 text-xs font-semibold text-foreground`}
         >
+          <span
+            className={`${
+              emailVerify === "Verified" ? "bg-green-700" : "bg-red-700"
+            } h-[6px] w-[6px] rounded-full mr-[6px]`}
+          ></span>
           {emailVerify}
         </div>
       );
-    },
-  },
-  {
-    accessorKey: "amount",
-    header: () => <div className="text-right">Wallet amount</div>,
-    cell: ({ row }) => {
-      const amount = parseFloat(row.getValue("amount"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(amount);
-      return <div className="text-right font-semibold">{formatted}</div>;
     },
   },
   {

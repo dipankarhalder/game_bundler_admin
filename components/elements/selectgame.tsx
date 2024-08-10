@@ -25,7 +25,8 @@ import {
 } from "@/components/ui/dialog";
 import { Form, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
-import { gameList, appStorage } from "@/content";
+import { appStorage } from "@/content/localstore";
+import { gameList } from "@/content/gamedropdown";
 
 const FormSchema = z.object({
   game: z.string({
@@ -103,26 +104,23 @@ export const SelectGame = () => {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectGroup>
-                            {Object.entries(gameList).map(([type, games]) => (
-                              <Fragment key={type}>
-                                <SelectLabel className="uppercase bg-gray-200 text-xs">
-                                  {type.charAt(0).toUpperCase() + type.slice(1)}
+                            {gameList.categories.map((game) => (
+                              <Fragment key={game.groupId}>
+                                <SelectLabel className="uppercase bg-blue-100 text-xs">
+                                  {game.groupTitle}
                                 </SelectLabel>
-                                {games.map((game) => (
+                                {game.items.map((item) => (
                                   <SelectItem
-                                    value={game.title}
-                                    key={game.id}
+                                    value={item.title}
+                                    key={item.id}
                                     className="py-2"
                                   >
-                                    <p className="font-semibold text-sm text-left w-full mb-0">
-                                      {game.title}
+                                    <p className="font-semibold text-xs text-left w-full mb-0 flex">
+                                      <span className="font-medium w-[70px]">
+                                        {item.id}
+                                      </span>{" "}
+                                      {item.title}
                                     </p>
-                                    <span className="text-xs text-left mt-0">
-                                      {game.developer}{" "}
-                                      <span className="font-bold text-xs text-blue-400">
-                                        ({game.rating})
-                                      </span>
-                                    </span>
                                   </SelectItem>
                                 ))}
                               </Fragment>
