@@ -5,7 +5,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { environments } from "@/content";
+import { environments } from "@/content/environment";
 
 export const SelectEnv = () => {
   return (

@@ -1,9 +1,10 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-import { sidebarLinks } from "@/content";
+import { sidebarLinks } from "@/content/sidebar";
 
 export const Sidebar = () => {
   const router = usePathname();
