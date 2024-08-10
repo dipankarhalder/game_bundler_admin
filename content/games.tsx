@@ -6,7 +6,7 @@ export const data = [
     create_date: "2024-01-10",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/adventure_quest.jpg",
+    image_link: "https://example.com/images/adventure_quest.jpg",
     bundle_price: 19.99,
   },
   {
@@ -16,7 +16,7 @@ export const data = [
     create_date: "2024-02-15",
     active_status: true,
     genre: "Shooter",
-    google_image_link: "https://example.com/images/space_invaders.jpg",
+    image_link: "https://example.com/images/space_invaders.jpg",
     bundle_price: 9.99,
   },
   {
@@ -26,7 +26,7 @@ export const data = [
     create_date: "2024-03-20",
     active_status: false,
     genre: "Puzzle",
-    google_image_link: "https://example.com/images/puzzle_master.jpg",
+    image_link: "https://example.com/images/puzzle_master.jpg",
     bundle_price: 14.99,
   },
   {
@@ -36,7 +36,7 @@ export const data = [
     create_date: "2024-04-25",
     active_status: true,
     genre: "Racing",
-    google_image_link: "https://example.com/images/racing_legends.jpg",
+    image_link: "https://example.com/images/racing_legends.jpg",
     bundle_price: 29.99,
   },
   {
@@ -46,7 +46,7 @@ export const data = [
     create_date: "2024-05-30",
     active_status: true,
     genre: "Mystery",
-    google_image_link: "https://example.com/images/mystery_mansion.jpg",
+    image_link: "https://example.com/images/mystery_mansion.jpg",
     bundle_price: 24.99,
   },
   {
@@ -56,7 +56,7 @@ export const data = [
     create_date: "2024-06-15",
     active_status: true,
     genre: "Survival",
-    google_image_link: "https://example.com/images/zombie_survival.jpg",
+    image_link: "https://example.com/images/zombie_survival.jpg",
     bundle_price: 39.99,
   },
   {
@@ -66,7 +66,7 @@ export const data = [
     create_date: "2024-07-20",
     active_status: false,
     genre: "Fantasy",
-    google_image_link: "https://example.com/images/fantasy_battle.jpg",
+    image_link: "https://example.com/images/fantasy_battle.jpg",
     bundle_price: 34.99,
   },
   {
@@ -76,7 +76,7 @@ export const data = [
     create_date: "2024-08-05",
     active_status: true,
     genre: "Strategy",
-    google_image_link: "https://example.com/images/historical_wars.jpg",
+    image_link: "https://example.com/images/historical_wars.jpg",
     bundle_price: 44.99,
   },
   {
@@ -86,7 +86,7 @@ export const data = [
     create_date: "2024-09-10",
     active_status: true,
     genre: "Simulation",
-    google_image_link: "https://example.com/images/virtual_farm.jpg",
+    image_link: "https://example.com/images/virtual_farm.jpg",
     bundle_price: 19.99,
   },
   {
@@ -96,7 +96,7 @@ export const data = [
     create_date: "2024-10-25",
     active_status: false,
     genre: "Action",
-    google_image_link: "https://example.com/images/dungeon_escape.jpg",
+    image_link: "https://example.com/images/dungeon_escape.jpg",
     bundle_price: 14.99,
   },
   {
@@ -106,7 +106,7 @@ export const data = [
     create_date: "2024-11-01",
     active_status: true,
     genre: "Stealth",
-    google_image_link: "https://example.com/images/stealth_agent.jpg",
+    image_link: "https://example.com/images/stealth_agent.jpg",
     bundle_price: 24.99,
   },
   {
@@ -116,7 +116,7 @@ export const data = [
     create_date: "2024-12-01",
     active_status: true,
     genre: "Battle Royale",
-    google_image_link: "https://example.com/images/battle_royale.jpg",
+    image_link: "https://example.com/images/battle_royale.jpg",
     bundle_price: 29.99,
   },
   {
@@ -126,7 +126,7 @@ export const data = [
     create_date: "2024-01-12",
     active_status: true,
     genre: "Sci-Fi",
-    google_image_link: "https://example.com/images/cyber_quest.jpg",
+    image_link: "https://example.com/images/cyber_quest.jpg",
     bundle_price: 34.99,
   },
   {
@@ -136,7 +136,7 @@ export const data = [
     create_date: "2024-02-18",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/pirate_adventures.jpg",
+    image_link: "https://example.com/images/pirate_adventures.jpg",
     bundle_price: 19.99,
   },
   {
@@ -146,7 +146,7 @@ export const data = [
     create_date: "2024-03-25",
     active_status: false,
     genre: "Simulation",
-    google_image_link: "https://example.com/images/city_builder.jpg",
+    image_link: "https://example.com/images/city_builder.jpg",
     bundle_price: 24.99,
   },
   {
@@ -156,7 +156,7 @@ export const data = [
     create_date: "2024-04-30",
     active_status: true,
     genre: "Strategy",
-    google_image_link: "https://example.com/images/epic_battles.jpg",
+    image_link: "https://example.com/images/epic_battles.jpg",
     bundle_price: 39.99,
   },
   {
@@ -166,7 +166,7 @@ export const data = [
     create_date: "2024-05-12",
     active_status: true,
     genre: "Horror",
-    google_image_link: "https://example.com/images/ghost_hunter.jpg",
+    image_link: "https://example.com/images/ghost_hunter.jpg",
     bundle_price: 29.99,
   },
   {
@@ -176,7 +176,7 @@ export const data = [
     create_date: "2024-06-22",
     active_status: true,
     genre: "Survival",
-    google_image_link: "https://example.com/images/survival_island.jpg",
+    image_link: "https://example.com/images/survival_island.jpg",
     bundle_price: 34.99,
   },
   {
@@ -186,7 +186,7 @@ export const data = [
     create_date: "2024-07-10",
     active_status: false,
     genre: "Sci-Fi",
-    google_image_link: "https://example.com/images/robot_wars.jpg",
+    image_link: "https://example.com/images/robot_wars.jpg",
     bundle_price: 39.99,
   },
   {
@@ -196,7 +196,7 @@ export const data = [
     create_date: "2024-08-15",
     active_status: true,
     genre: "Strategy",
-    google_image_link: "https://example.com/images/castle_defense.jpg",
+    image_link: "https://example.com/images/castle_defense.jpg",
     bundle_price: 29.99,
   },
   {
@@ -206,7 +206,7 @@ export const data = [
     create_date: "2024-09-25",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/deep_sea_explorer.jpg",
+    image_link: "https://example.com/images/deep_sea_explorer.jpg",
     bundle_price: 24.99,
   },
   {
@@ -216,7 +216,7 @@ export const data = [
     create_date: "2024-10-30",
     active_status: false,
     genre: "Shooter",
-    google_image_link: "https://example.com/images/alien_invasion.jpg",
+    image_link: "https://example.com/images/alien_invasion.jpg",
     bundle_price: 14.99,
   },
   {
@@ -226,7 +226,7 @@ export const data = [
     create_date: "2024-11-05",
     active_status: true,
     genre: "Fantasy",
-    google_image_link: "https://example.com/images/medieval_quest.jpg",
+    image_link: "https://example.com/images/medieval_quest.jpg",
     bundle_price: 19.99,
   },
   {
@@ -236,7 +236,7 @@ export const data = [
     create_date: "2024-12-01",
     active_status: true,
     genre: "Racing",
-    google_image_link: "https://example.com/images/futuristic_racing.jpg",
+    image_link: "https://example.com/images/futuristic_racing.jpg",
     bundle_price: 34.99,
   },
   {
@@ -246,7 +246,7 @@ export const data = [
     create_date: "2024-01-15",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/steampunk_saga.jpg",
+    image_link: "https://example.com/images/steampunk_saga.jpg",
     bundle_price: 24.99,
   },
   {
@@ -256,7 +256,7 @@ export const data = [
     create_date: "2024-02-20",
     active_status: false,
     genre: "Fantasy",
-    google_image_link: "https://example.com/images/magic_academy.jpg",
+    image_link: "https://example.com/images/magic_academy.jpg",
     bundle_price: 29.99,
   },
   {
@@ -266,7 +266,7 @@ export const data = [
     create_date: "2024-03-30",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/ancient_legends.jpg",
+    image_link: "https://example.com/images/ancient_legends.jpg",
     bundle_price: 39.99,
   },
   {
@@ -276,7 +276,7 @@ export const data = [
     create_date: "2024-04-10",
     active_status: true,
     genre: "Simulation",
-    google_image_link: "https://example.com/images/space_colony.jpg",
+    image_link: "https://example.com/images/space_colony.jpg",
     bundle_price: 24.99,
   },
   {
@@ -286,7 +286,7 @@ export const data = [
     create_date: "2024-05-05",
     active_status: true,
     genre: "Action",
-    google_image_link: "https://example.com/images/viking_raid.jpg",
+    image_link: "https://example.com/images/viking_raid.jpg",
     bundle_price: 29.99,
   },
   {
@@ -296,7 +296,7 @@ export const data = [
     create_date: "2024-06-15",
     active_status: false,
     genre: "Sci-Fi",
-    google_image_link: "https://example.com/images/robot_revolution.jpg",
+    image_link: "https://example.com/images/robot_revolution.jpg",
     bundle_price: 34.99,
   },
   {
@@ -306,7 +306,7 @@ export const data = [
     create_date: "2024-07-20",
     active_status: true,
     genre: "Fantasy",
-    google_image_link: "https://example.com/images/dragon_slayer.jpg",
+    image_link: "https://example.com/images/dragon_slayer.jpg",
     bundle_price: 39.99,
   },
   {
@@ -316,7 +316,7 @@ export const data = [
     create_date: "2024-08-25",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/jungle_expedition.jpg",
+    image_link: "https://example.com/images/jungle_expedition.jpg",
     bundle_price: 24.99,
   },
   {
@@ -326,7 +326,7 @@ export const data = [
     create_date: "2024-09-10",
     active_status: true,
     genre: "Sci-Fi",
-    google_image_link: "https://example.com/images/cyber_warriors.jpg",
+    image_link: "https://example.com/images/cyber_warriors.jpg",
     bundle_price: 34.99,
   },
   {
@@ -336,7 +336,7 @@ export const data = [
     create_date: "2024-10-05",
     active_status: false,
     genre: "Action",
-    google_image_link: "https://example.com/images/urban_crime.jpg",
+    image_link: "https://example.com/images/urban_crime.jpg",
     bundle_price: 19.99,
   },
   {
@@ -346,7 +346,7 @@ export const data = [
     create_date: "2024-11-12",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/alien_quest.jpg",
+    image_link: "https://example.com/images/alien_quest.jpg",
     bundle_price: 29.99,
   },
   {
@@ -356,7 +356,7 @@ export const data = [
     create_date: "2024-12-20",
     active_status: true,
     genre: "Strategy",
-    google_image_link: "https://example.com/images/high_seas_battle.jpg",
+    image_link: "https://example.com/images/high_seas_battle.jpg",
     bundle_price: 39.99,
   },
   {
@@ -366,7 +366,7 @@ export const data = [
     create_date: "2024-01-22",
     active_status: true,
     genre: "Horror",
-    google_image_link: "https://example.com/images/gothic_horror.jpg",
+    image_link: "https://example.com/images/gothic_horror.jpg",
     bundle_price: 24.99,
   },
   {
@@ -376,7 +376,7 @@ export const data = [
     create_date: "2024-02-28",
     active_status: false,
     genre: "Fantasy",
-    google_image_link: "https://example.com/images/mystic_realms.jpg",
+    image_link: "https://example.com/images/mystic_realms.jpg",
     bundle_price: 34.99,
   },
   {
@@ -386,7 +386,7 @@ export const data = [
     create_date: "2024-03-15",
     active_status: true,
     genre: "Sci-Fi",
-    google_image_link: "https://example.com/images/space_pirates.jpg",
+    image_link: "https://example.com/images/space_pirates.jpg",
     bundle_price: 29.99,
   },
   {
@@ -396,7 +396,7 @@ export const data = [
     create_date: "2024-04-10",
     active_status: true,
     genre: "Action",
-    google_image_link: "https://example.com/images/robo_rescue.jpg",
+    image_link: "https://example.com/images/robo_rescue.jpg",
     bundle_price: 19.99,
   },
   {
@@ -406,7 +406,7 @@ export const data = [
     create_date: "2024-05-25",
     active_status: false,
     genre: "Fantasy",
-    google_image_link: "https://example.com/images/magic_duel.jpg",
+    image_link: "https://example.com/images/magic_duel.jpg",
     bundle_price: 24.99,
   },
   {
@@ -416,7 +416,7 @@ export const data = [
     create_date: "2024-06-15",
     active_status: true,
     genre: "Racing",
-    google_image_link: "https://example.com/images/underground_racing.jpg",
+    image_link: "https://example.com/images/underground_racing.jpg",
     bundle_price: 34.99,
   },
   {
@@ -426,7 +426,7 @@ export const data = [
     create_date: "2024-07-20",
     active_status: true,
     genre: "Horror",
-    google_image_link: "https://example.com/images/haunted_manor.jpg",
+    image_link: "https://example.com/images/haunted_manor.jpg",
     bundle_price: 29.99,
   },
   {
@@ -436,7 +436,7 @@ export const data = [
     create_date: "2024-08-25",
     active_status: true,
     genre: "Fantasy",
-    google_image_link: "https://example.com/images/warriors_quest.jpg",
+    image_link: "https://example.com/images/warriors_quest.jpg",
     bundle_price: 39.99,
   },
   {
@@ -446,7 +446,7 @@ export const data = [
     create_date: "2024-09-10",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/epic_journey.jpg",
+    image_link: "https://example.com/images/epic_journey.jpg",
     bundle_price: 24.99,
   },
   {
@@ -456,7 +456,7 @@ export const data = [
     create_date: "2024-10-05",
     active_status: false,
     genre: "Sci-Fi",
-    google_image_link: "https://example.com/images/galactic_battle.jpg",
+    image_link: "https://example.com/images/galactic_battle.jpg",
     bundle_price: 34.99,
   },
   {
@@ -466,7 +466,7 @@ export const data = [
     create_date: "2024-11-15",
     active_status: true,
     genre: "Stealth",
-    google_image_link: "https://example.com/images/secret_agent.jpg",
+    image_link: "https://example.com/images/secret_agent.jpg",
     bundle_price: 29.99,
   },
   {
@@ -476,7 +476,7 @@ export const data = [
     create_date: "2024-12-10",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/treasure_hunt.jpg",
+    image_link: "https://example.com/images/treasure_hunt.jpg",
     bundle_price: 24.99,
   },
   {
@@ -486,7 +486,7 @@ export const data = [
     create_date: "2024-01-05",
     active_status: true,
     genre: "Sci-Fi",
-    google_image_link: "https://example.com/images/alien_encounter.jpg",
+    image_link: "https://example.com/images/alien_encounter.jpg",
     bundle_price: 34.99,
   },
   {
@@ -496,7 +496,7 @@ export const data = [
     create_date: "2024-02-15",
     active_status: false,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/dino_adventure.jpg",
+    image_link: "https://example.com/images/dino_adventure.jpg",
     bundle_price: 19.99,
   },
   {
@@ -506,7 +506,7 @@ export const data = [
     create_date: "2024-09-25",
     active_status: true,
     genre: "Adventure",
-    google_image_link: "https://example.com/images/deep_sea_explorer.jpg",
+    image_link: "https://example.com/images/deep_sea_explorer.jpg",
     bundle_price: 24.99,
   },
   {
@@ -516,7 +516,7 @@ export const data = [
     create_date: "2024-10-30",
     active_status: false,
     genre: "Shooter",
-    google_image_link: "https://example.com/images/alien_invasion.jpg",
+    image_link: "https://example.com/images/alien_invasion.jpg",
     bundle_price: 14.99,
   },
 ];
