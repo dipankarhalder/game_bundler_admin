@@ -15,6 +15,17 @@ import { Separator } from "@/components/ui/separator";
 import { environments } from "@/content/environment";
 
 export const SelectEnv = () => {
+  const dropdownlist = {
+    profile_name: "Dipankar Halder",
+    profile_short_name: "DH",
+    profile_email: "dipankarh.dev@gmail.com",
+    profile_group: [
+      { title: "Profile", keyShort: "⇧⌘P" },
+      { title: "Billing", keyShort: "⌘B" },
+      { title: "Settings", keyShort: "⌘S" },
+    ],
+  };
+
   return (
     <div className="flex items-center font-semibold">
       <p className="text-xs mr-2 text-slate-500">Environment: </p>
@@ -37,73 +48,38 @@ export const SelectEnv = () => {
               variant="outline"
               className="rounded-full p-[8px] w-[40px] h-[40px] bg-slate-100"
             >
-              DH
+              {dropdownlist.profile_short_name}
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="p-0 w-[180px]">
-            <div className="px-2 py-1.5 text-sm font-normal">
+          <PopoverContent className="p-0 w-[200px] mr-6">
+            <div className="px-4 py-2 text-sm font-normal">
               <div className="flex flex-col space-y-1">
-                <p className="text-sm font-medium leading-none">shadcn</p>
-                <p className="text-xs leading-none text-muted-foreground">
-                  m@example.com
+                <p className="text-sm font-semibold mb-0">
+                  {dropdownlist.profile_name}
+                </p>
+                <p className="text-xs font-medium text-slate-500">
+                  {dropdownlist.profile_email}
                 </p>
               </div>
             </div>
             <Separator />
-            <div role="group">
-              <div
-                role="menuitem"
-                className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
-                data-orientation="vertical"
-                data-radix-collection-item=""
-              >
-                Profile
-                <span className="ml-auto text-xs tracking-widest opacity-60">
-                  ⇧⌘P
-                </span>
-              </div>
-              <div
-                role="menuitem"
-                className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
-                data-orientation="vertical"
-                data-radix-collection-item=""
-              >
-                Billing
-                <span className="ml-auto text-xs tracking-widest opacity-60">
-                  ⌘B
-                </span>
-              </div>
-              <div
-                role="menuitem"
-                className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
-                data-orientation="vertical"
-                data-radix-collection-item=""
-              >
-                Settings
-                <span className="ml-auto text-xs tracking-widest opacity-60">
-                  ⌘S
-                </span>
-              </div>
-              <div
-                role="menuitem"
-                className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
-                data-orientation="vertical"
-                data-radix-collection-item=""
-              >
-                New Team
-              </div>
+            <div className="py-2 px-2">
+              {dropdownlist.profile_group.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="relative flex cursor-pointer items-center rounded-sm px-2 py-1 text-sm font-medium hover:bg-slate-200"
+                >
+                  {item.title}
+                  <span className="ml-auto text-xs tracking-widest">
+                    {item.keyShort}
+                  </span>
+                </div>
+              ))}
             </div>
             <Separator />
-            <div
-              role="menuitem"
-              className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
-              data-orientation="vertical"
-              data-radix-collection-item=""
-            >
+            <div className="relative flex cursor-pointer items-center font-medium rounded-sm px-4 py-2 text-sm hover:bg-slate-200">
               Log out
-              <span className="ml-auto text-xs tracking-widest opacity-60">
-                ⇧⌘Q
-              </span>
+              <span className="ml-auto text-xs tracking-widest">⇧⌘Q</span>
             </div>
           </PopoverContent>
         </Popover>
