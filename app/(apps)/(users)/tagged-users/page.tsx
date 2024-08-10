@@ -242,7 +242,7 @@ export default function TaggedUser() {
       <div className="w-full">
         <div className="flex items-center py-4">
           <Input
-            placeholder="Filter with emails..."
+            placeholder="Search with emails..."
             value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
               table.getColumn("email")?.setFilterValue(event.target.value)
@@ -322,7 +322,7 @@ export default function TaggedUser() {
                 <TableRow>
                   <TableCell
                     colSpan={columns.length}
-                    className="h-24 text-center"
+                    className="h-24 text-center font-semibold text-sm"
                   >
                     No results.
                   </TableCell>

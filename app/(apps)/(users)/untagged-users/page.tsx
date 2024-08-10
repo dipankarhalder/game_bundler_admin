@@ -123,14 +123,14 @@ export const columns: ColumnDef<IUntagUserInfo>[] = [
   },
   {
     accessorKey: "amount",
-    header: () => <div className="text-right">Wallet amount</div>,
+    header: () => <div className="text-left">Wallet amount</div>,
     cell: ({ row }) => {
       const amount = parseFloat(row.getValue("amount"));
       const formatted = new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD",
       }).format(amount);
-      return <div className="text-right font-semibold">{formatted}</div>;
+      return <div className="text-left font-semibold">{formatted}</div>;
     },
   },
   {
@@ -207,7 +207,7 @@ export default function UntaggedUsers() {
       <div className="w-full">
         <div className="flex items-center py-4">
           <Input
-            placeholder="Filter with emails..."
+            placeholder="Search with emails..."
             value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
               table.getColumn("email")?.setFilterValue(event.target.value)
@@ -287,7 +287,7 @@ export default function UntaggedUsers() {
                 <TableRow>
                   <TableCell
                     colSpan={columns.length}
-                    className="h-24 text-center"
+                    className="h-24 text-center font-semibold text-sm"
                   >
                     No results.
                   </TableCell>
