@@ -59,11 +59,11 @@ export const sidebarLinks: ISidebar[] = [
     sublist: [
       {
         name: "Manage Currency",
-        path: "/",
+        path: "/manage-currency",
       },
       {
         name: "Currency Package",
-        path: "/",
+        path: "/currency-package",
       },
     ],
   },
